@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test1" thread-count="1" parallel="instances" verbose="2">
+	<listeners>
+		<!--  <listener class-name="Logger.RetryListener" /> -->
+		<!--  listener class-name="Logger.TestngListener" /> -->
+		
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners> 
+	<test name="Test" preserve-order="true">
+		<classes>
+			<class name="FactoryAndData.ExcelTest_Jieji_YueLieBiao.CompareContents_Shishoujine" />
+			<class name="FactoryAndData.ExcelTest_Jieji_YueLieBiao.CompareContents_Qingsuanshuju" />
+			<class name="FactoryAndData.ExcelTest_Jieji_YueLieBiao.CompareContents_Yijiesuanshuju" />	
+			<class name="FactoryAndData.ExcelTest_Jieji_YueLieBiao.CompareContents_Yijiesuanshuju_CompareWith_Liushuixin" />
+			<class name="FactoryAndData.ExcelTest_Jieji_YueLieBiao.CompareContents_Weijiesuanyue" />
+		</classes>
+	</test>
+</suite>
