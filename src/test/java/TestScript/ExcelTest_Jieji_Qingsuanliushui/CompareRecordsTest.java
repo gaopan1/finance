@@ -441,7 +441,7 @@ public class CompareRecordsTest {
 			 String dingdanhao_jiejiliushui_Str = "";
 			
 			 
-			 for(int y =0; y<rowLength1;y++){
+			 for(int y =0; y<colLength1;y++){
 				 
 				 cell_jijiliushui = row_jiejiliushui.getCell(y);
 				 

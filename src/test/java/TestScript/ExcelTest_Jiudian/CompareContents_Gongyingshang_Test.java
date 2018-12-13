@@ -138,14 +138,14 @@ public class CompareContents_Gongyingshang_Test {
         	String pay_id = "";
         	for(int y =0 ;y<colLength;y++){
         		XSSFCell xssfCell = xssfRow.getCell(y);
-        		Dailylog.logInfo(" x is ::::::: " + x + " y is ::::::" + y + "row length is :" + rowLength + "cell is null?" + (xssfCell == null));
+//        		Dailylog.logInfo(" x is ::::::: " + x + " y is ::::::" + y + "row length is :" + rowLength + "cell is null?" + (xssfCell == null));
         		
         		if(index == y){
         			
         			if(xssfCell != null){
         				value = WriterExcelUtil.getCellValue(xssfCell).replace("'", "");
             			
-            			Dailylog.logInfo("pay  value >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>is :" + value);
+//            			Dailylog.logInfo("pay  value >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>is :" + value);
         			}else{
         				value = "";
         			}
@@ -226,7 +226,7 @@ public class CompareContents_Gongyingshang_Test {
         			
         			if(value != null){
         				value = WriterExcelUtil.getCellValue(xssfCell);
-        				Dailylog.logInfo("account value >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> is :" + value + "    x is :" + x);
+//        				Dailylog.logInfo("account value >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> is :" + value + "    x is :" + x);
         			}else{
         				value = "";
         			}

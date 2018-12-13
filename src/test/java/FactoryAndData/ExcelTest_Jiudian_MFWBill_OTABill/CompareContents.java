@@ -36,7 +36,7 @@ public class CompareContents {
 				{
 					  "D:\\马蜂窝对账项目\\mfw账单\\数据准备\\ctrip_out\\"+testMonth+"_"+testDay+"\\mfw账单对账全表.xlsx",
 					  "D:\\马蜂窝对账项目\\mfw账单\\result\\ctrip_out\\contents"+testMonth+"_"+testDay+".xls",
-					  "ctrip_in",
+					  "ctrip_out",
 					  "mfw账单",
 					  "ota账单",
 					  "OTA订单ID",
@@ -44,6 +44,30 @@ public class CompareContents {
 					  "订单号",
 					  "结算价"
 				  },
+			
+					/*{
+					  "D:\\马蜂窝对账项目\\mfw账单\\数据准备\\webbeds\\"+testMonth+"_"+testDay+"\\mfw账单对账全表.xlsx",
+					  "D:\\马蜂窝对账项目\\mfw账单\\result\\webbeds\\contents"+testMonth+"_"+testDay+".xls",
+					  "webbeds",
+					  "mfw账单",
+					  "ota账单",
+					  "OTA订单ID",
+					  "付款金额-原币",
+					  "订单号",
+					  "结算价"
+					},*/
+			
+					/*{
+					  "D:\\马蜂窝对账项目\\mfw账单\\数据准备\\jalan\\"+testMonth+"_"+testDay+"\\mfw账单对账全表.xlsx",
+					  "D:\\马蜂窝对账项目\\mfw账单\\result\\jalan\\contents"+testMonth+"_"+testDay+".xls",
+					  "webbeds",
+					  "mfw账单",
+					  "ota账单",
+					  "OTA订单ID",
+					  "付款金额-原币",
+					  "订单号",
+					  "结算价"
+					},*/
 				
 				
 		};

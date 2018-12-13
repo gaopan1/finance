@@ -13,6 +13,8 @@ import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
+import CommonFunction.WriterExcelUtil;
+
 public class Test {
 
 	public static void main(String[] args) {
@@ -21,6 +23,7 @@ public class Test {
 		String destination = "C:\\Users\\gaopan\\Desktop\\测试excel\\abcde.xls";
 		
 		HSSFWorkbook hssfWorkbook = null;
+		
 		
 		
 		File file = new File(destination);

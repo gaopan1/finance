@@ -193,27 +193,27 @@ public class CompareContents_Shouru_Test {
         	
         	// 根据不同的模式  计算收入  然后判断收入是否正确
         	
-        	Dailylog.logInfo("pay id is :::::::::::::::::::::::::::::::::" + payId_str);
-        	Dailylog.logError("合作模式:::::::::::" +  co_model_str);
+//        	Dailylog.logInfo("pay id is :::::::::::::::::::::::::::::::::" + payId_str);
+//        	Dailylog.logError("合作模式:::::::::::" +  co_model_str);
         	
 
         	double f_actual_SalesPrice = WriterExcelUtil.getFloatPrice(actual_SalesPrice_str);
-        	Dailylog.logInfo("f_actual_SalesPrice is :" + f_actual_SalesPrice);
+//        	Dailylog.logInfo("f_actual_SalesPrice is :" + f_actual_SalesPrice);
         	
         	double f_salesPrice = WriterExcelUtil.getFloatPrice(salesPrice_str);
-        	Dailylog.logInfo("f_salesPrice is :" + f_salesPrice);
+//        	Dailylog.logInfo("f_salesPrice is :" + f_salesPrice);
         	
            	double f_chengbenPrice = WriterExcelUtil.getFloatPrice(chengbenPrice_str);
-        	Dailylog.logInfo("f_chengbenPrice is :" + f_chengbenPrice);
+//        	Dailylog.logInfo("f_chengbenPrice is :" + f_chengbenPrice);
         	
         	double f_yongjin_rate = WriterExcelUtil.getFloatPrice(yongjin_rate_str);
-        	Dailylog.logInfo("f_yongjin_rate is :" + f_yongjin_rate);
+//        	Dailylog.logInfo("f_yongjin_rate is :" + f_yongjin_rate);
         	
         	double f_shouru = WriterExcelUtil.getFloatPrice(shouru_str);
-        	Dailylog.logInfo("f_shouru is :" + f_shouru);
+//        	Dailylog.logInfo("f_shouru is :" + f_shouru);
 
         	
-        	Dailylog.logInfo("<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>");
+//        	Dailylog.logInfo("<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>");
         	
         	if(co_model_str.equals("jj")){
 	       	
@@ -227,12 +227,12 @@ public class CompareContents_Shouru_Test {
 	        		
 	        		num = str1.length();
 	        		
-	        		Dailylog.logInfo( "shouru_str is :::::" + (f_shouru+ "") + "    num is :::" + num);
+//	        		Dailylog.logInfo( "shouru_str is :::::" + (f_shouru+ "") + "    num is :::" + num);
 	        	}
 	    		
 	        	f_calculate_shouru_jiajia = WriterExcelUtil.getValidNumbersOfDouble(f_calculate_shouru_jiajia, num);
 	        	
-	        	Dailylog.logInfo("calculate is :" + f_calculate_shouru_jiajia + " shouru is : " + f_shouru + "judge is ::::::"+ (f_calculate_shouru_jiajia != f_shouru));
+//	        	Dailylog.logInfo("calculate is :" + f_calculate_shouru_jiajia + " shouru is : " + f_shouru + "judge is ::::::"+ (f_calculate_shouru_jiajia != f_shouru));
 	        	if(f_calculate_shouru_jiajia != f_shouru){
 	        		
 	            	list.add(co_model_str);
@@ -258,7 +258,7 @@ public class CompareContents_Shouru_Test {
 	        		String str1 = (f_shouru+"").split("\\.")[1];
 	        		
 	        		num = str1.length();
-	        		Dailylog.logInfo( "shouru_str is :::::" + (f_shouru+"") + "    num is :::" + num);
+//	        		Dailylog.logInfo( "shouru_str is :::::" + (f_shouru+"") + "    num is :::" + num);
 	        	}
 	    		
 	        	f_calculate_shouru_fanyong = WriterExcelUtil.getValidNumbersOfDouble(f_calculate_shouru_fanyong, num);
@@ -266,9 +266,9 @@ public class CompareContents_Shouru_Test {
 	        	
         		
         		
-        		Dailylog.logInfo("f_calculate_shouru_fanyong is <><><><><><><>:" + f_calculate_shouru_fanyong);
+//        		Dailylog.logInfo("f_calculate_shouru_fanyong is <><><><><><><>:" + f_calculate_shouru_fanyong);
         		
-        		Dailylog.logInfo("calculate is :" + f_calculate_shouru_fanyong + " shouru is : " + f_shouru + "judge is ::::::"+ (f_calculate_shouru_fanyong != f_shouru));
+//        		Dailylog.logInfo("calculate is :" + f_calculate_shouru_fanyong + " shouru is : " + f_shouru + "judge is ::::::"+ (f_calculate_shouru_fanyong != f_shouru));
         		
         		if(f_shouru != f_calculate_shouru_fanyong){
 	        		

@@ -184,23 +184,23 @@ public class CompareContents_Feiyong_Test {
         	
         	// 根据不同的模式  计算收入  然后判断收入是否正确
         	
-        	Dailylog.logInfo("pay id is :::::::::::::::::::::::::::::::::" + payId_str);
-        	Dailylog.logError("合作模式:::::::::::" +  co_model_str);
+//        	Dailylog.logInfo("pay id is :::::::::::::::::::::::::::::::::" + payId_str);
+//        	Dailylog.logError("合作模式:::::::::::" +  co_model_str);
         	
         	double f_fengmi = WriterExcelUtil.getFloatPrice(fengmi_str);
-        	Dailylog.logInfo("f_fengmi is :" + f_fengmi);
+//        	Dailylog.logInfo("f_fengmi is :" + f_fengmi);
         	
         	double f_youhuiquan = WriterExcelUtil.getFloatPrice(youhuiquan_str);
-        	Dailylog.logInfo("f_youhuiquan is :" + f_youhuiquan);
+//        	Dailylog.logInfo("f_youhuiquan is :" + f_youhuiquan);
         	
            	double f_butie = WriterExcelUtil.getFloatPrice(butie_str);
-        	Dailylog.logInfo("f_butie is :" + f_butie);
+//        	Dailylog.logInfo("f_butie is :" + f_butie);
         	
         	double f_feiyong = WriterExcelUtil.getFloatPrice(feiyong_str);
-        	Dailylog.logInfo("f_feiyong is :" + f_feiyong);
+//        	Dailylog.logInfo("f_feiyong is :" + f_feiyong);
 
         	
-        	Dailylog.logInfo("<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>");
+//        	Dailylog.logInfo("<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>");
         	
         	if(co_model_str.equals("jj")){
 	       	

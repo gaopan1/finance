@@ -173,30 +173,30 @@ public class CompareContents_Butie_Test {
         	}
         	
         	
-        	Dailylog.logInfo("pay id is :::::::::::::::::::::::::::::::::" + payId_str);
+//        	Dailylog.logInfo("pay id is :::::::::::::::::::::::::::::::::" + payId_str);
         	
         	double f_fengmi = WriterExcelUtil.getFloatPrice(fengmi_str);
-        	Dailylog.logInfo("f_fengmi is :" + f_fengmi);
+//        	Dailylog.logInfo("f_fengmi is :" + f_fengmi);
         	
         	double f_zhekou = WriterExcelUtil.getFloatPrice(zhekou_str);
-        	Dailylog.logInfo("f_zhekou is :" + f_zhekou);
+//        	Dailylog.logInfo("f_zhekou is :" + f_zhekou);
         	
         	double f_youhuiquan = WriterExcelUtil.getFloatPrice(youhuiquan_str);
-        	Dailylog.logInfo("f_youhuiquan is :" + f_youhuiquan);
+//        	Dailylog.logInfo("f_youhuiquan is :" + f_youhuiquan);
 
         	
         	double f_butie = WriterExcelUtil.getFloatPrice(butie_str);
-        	Dailylog.logInfo("f_butie is :" + f_butie);
+//        	Dailylog.logInfo("f_butie is :" + f_butie);
         	
-        	Dailylog.logInfo("<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>");
+//        	Dailylog.logInfo("<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>");
         	
         	//计算公式
         	double calculate_butie = f_fengmi + f_zhekou + f_youhuiquan;
         	
-        	Dailylog.logInfo("补贴的计算结果(处理之前)是：" + calculate_butie);
+//        	Dailylog.logInfo("补贴的计算结果(处理之前)是：" + calculate_butie);
         	
         	calculate_butie = WriterExcelUtil.getValidNumbersOfDouble(calculate_butie, f_butie+"");
-        	Dailylog.logInfo("补贴的计算结果(处理之后)是:" + calculate_butie);
+//        	Dailylog.logInfo("补贴的计算结果(处理之后)是:" + calculate_butie);
         	
         	List<String> list_detail = null;
         	

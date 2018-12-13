@@ -21,7 +21,7 @@ public class CompareRecords {
 				
 			//数据准备\七月1_3	
 			{ 	
-				"C:\\Users\\gaopan\\Desktop\\接机清算流水\\数据准备\\清算流水对账全表.xlsx",
+				"C:\\Users\\gaopan\\Desktop\\接机清算流水\\数据准备11.1_11.11\\清算流水对账全表.xlsx",
 				"C:\\Users\\gaopan\\Desktop\\接机清算流水\\result\\Records.xls",
 				"qingsuanliushui_positive",
 				"jiejiliushui_positive",
@@ -86,7 +86,7 @@ public class CompareRecords {
 				"清算日期"
 			},
 			{ 	
-				"C:\\Users\\gaopan\\Desktop\\接机清算流水\\数据准备\\清算流水对账全表.xlsx",
+				"C:\\Users\\gaopan\\Desktop\\接机清算流水\\数据准备11.1_11.11\\清算流水对账全表.xlsx",
 				"C:\\Users\\gaopan\\Desktop\\接机清算流水\\result\\Records.xls",
 				"qingsuanliushui_negative",
 				"jiejiliushui_negative",

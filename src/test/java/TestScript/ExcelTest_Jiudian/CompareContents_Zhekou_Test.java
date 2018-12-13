@@ -166,28 +166,28 @@ public class CompareContents_Zhekou_Test {
         	
         	// 根据不同的模式  计算收入  然后判断收入是否正确
         	
-        	Dailylog.logInfo("pay id is :::::::::::::::::::::::::::::::::" + payId_str);
+//        	Dailylog.logInfo("pay id is :::::::::::::::::::::::::::::::::" + payId_str);
         	
         	
         	double f_sales_Price = WriterExcelUtil.getFloatPrice(sales_Price_str);
-        	Dailylog.logInfo("f_sales_Price is :" + f_sales_Price);
+//        	Dailylog.logInfo("f_sales_Price is :" + f_sales_Price);
 
         	
         	double f_actual_Sales_Price = WriterExcelUtil.getFloatPrice(actual_Sales_Price_str);
-        	Dailylog.logInfo("f_actual_Sales_Price is :" + f_actual_Sales_Price);
+//        	Dailylog.logInfo("f_actual_Sales_Price is :" + f_actual_Sales_Price);
         	
         	double f_zhekou = WriterExcelUtil.getFloatPrice(zhekou_str);
-        	Dailylog.logInfo("f_zhekou is :" + f_zhekou);
+//        	Dailylog.logInfo("f_zhekou is :" + f_zhekou);
         	
         	
-        	Dailylog.logInfo("<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>");
+//        	Dailylog.logInfo("<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>");
         	
         	//计算公式
         	double calculate_zhekou = f_sales_Price-f_actual_Sales_Price;
         	
         	calculate_zhekou = WriterExcelUtil.getValidNumbersOfDouble(calculate_zhekou, 2);
         	
-        	Dailylog.logInfo("折扣的计算结果是：" + calculate_zhekou);
+//        	Dailylog.logInfo("折扣的计算结果是：" + calculate_zhekou);
         	
         	
         	List<String> list_detail = null;

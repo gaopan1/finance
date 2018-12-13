@@ -187,6 +187,10 @@ public class CompareContents_JieSuanLiuShui_Field_Fukuanjine_YUANBI {
              ota_dingdanID_OTABill_index = WriterExcelUtil.getIndexOfFields(xssfRow_ota, ota_dingdanID_OTABill);
              jiesuanjia_OTABill_index =  WriterExcelUtil.getIndexOfFields(xssfRow_ota, jiesuanjia_OTABill);
              
+             Dailylog.logInfo("ota_dingdanID_OTABill_index is :" +ota_dingdanID_OTABill_index);
+             Dailylog.logInfo("jiesuanjia_OTABill_index is :" +jiesuanjia_OTABill_index);
+             
+            
              
              XSSFRow row_ota = null;
 
@@ -206,10 +210,14 @@ public class CompareContents_JieSuanLiuShui_Field_Fukuanjine_YUANBI {
                 	 
                 	  if(y == ota_dingdanID_OTABill_index){
                 		  ota_dingdanID_OTABill_Str = WriterExcelUtil.getCellValue(cell,"0");
+//                		  Dailylog.logInfo("ota_dingdanID_OTABill_Str ：：：：：：：  "+ota_dingdanID_OTABill_Str);
                 	  }else if(y == jiesuanjia_OTABill_index){
                 		  jiesuanjia_OTABill_Str = WriterExcelUtil.getCellValue(cell);
+//                		  Dailylog.logInfo("jiesuanjia_OTABill_Str ：：：：：：：  "+jiesuanjia_OTABill_Str);
                 	  }
+                	  
                  }
+            
                  
                  double dou_jiesuanjia_OTABill = Double.parseDouble(jiesuanjia_OTABill_Str);
                  

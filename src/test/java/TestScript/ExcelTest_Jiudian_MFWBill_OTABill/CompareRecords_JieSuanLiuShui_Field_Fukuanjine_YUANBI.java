@@ -144,6 +144,7 @@ public class CompareRecords_JieSuanLiuShui_Field_Fukuanjine_YUANBI {
               
              Dailylog.logInfo("ota_dingdanID_mfwBill_Str is :" + ota_dingdanID_mfwBill_Str);
              Dailylog.logInfo("fukuanjine_YUANBI_mfwBill_Str is :" + fukuanjine_YUANBI_mfwBill_Str);
+            
              
              if(mfw_map.containsKey(ota_dingdanID_mfwBill_Str)){
             	 double value = mfw_map.get(ota_dingdanID_mfwBill_Str);
@@ -286,8 +287,8 @@ public class CompareRecords_JieSuanLiuShui_Field_Fukuanjine_YUANBI {
         
         List<String> firstRowNameList = new ArrayList<String>();
         
-        firstRowNameList.add("mfw账单中没有的ota订单");
         firstRowNameList.add("ota账单中没有的ota订单");
+        firstRowNameList.add("mfw账单中没有的ota订单");
        
  
         writeContent2Excels_Contents(destinationFile,"记录数的对比",firstRowNameList,mfw_left,ota_left);

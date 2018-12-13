@@ -4,6 +4,7 @@ import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.io.File;
+import java.io.FileInputStream;
 import java.math.BigDecimal;
 import java.text.DateFormat;
 import java.text.DecimalFormat;
@@ -12,6 +13,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
+import java.util.Properties;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -738,6 +740,37 @@ public class Common {
 		 return ff;		 
 	 }
 	
+	
+	
+	public static String getValueFromConf(String filePath,String key){
+		
+		File file = new File(filePath);
+		FileInputStream fis = null;
+		String value = null;
+		
+		try{
+			fis = new FileInputStream(file);
+			
+			Properties props = new Properties();
+			
+			props.load(fis);
+			
+			value = props.getProperty(key);
+			
+		}catch(Exception e){
+			e.printStackTrace();
+		}finally{
+			try {
+				if(fis != null){
+					fis.close();
+				}
+			} catch (Exception e2) {
+				e2.printStackTrace();
+			}
+		}
+
+		return value;
+	}
 	
 	
 }

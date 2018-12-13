@@ -10,11 +10,11 @@
 	</listeners> 
 	<test name="Test" preserve-order="true">
 		<classes>
-			<class name="FactoryAndData.ExcelTest_Jieji_YueLieBiao.CompareContents_Shishoujine" />
-			<class name="FactoryAndData.ExcelTest_Jieji_YueLieBiao.CompareContents_Qingsuanshuju" />
-			<class name="FactoryAndData.ExcelTest_Jieji_YueLieBiao.CompareContents_Yijiesuanshuju" />	
+			<!-- <class name="FactoryAndData.ExcelTest_Jieji_YueLieBiao.CompareContents_Shishoujine" /> -->
+			<!-- <class name="FactoryAndData.ExcelTest_Jieji_YueLieBiao.CompareContents_Qingsuanshuju" /> -->
+			<!-- <class name="FactoryAndData.ExcelTest_Jieji_YueLieBiao.CompareContents_Yijiesuanshuju" />	 -->
 			<class name="FactoryAndData.ExcelTest_Jieji_YueLieBiao.CompareContents_Yijiesuanshuju_CompareWith_Liushuixin" />
-			<class name="FactoryAndData.ExcelTest_Jieji_YueLieBiao.CompareContents_Weijiesuanyue" />
+			<!-- <class name="FactoryAndData.ExcelTest_Jieji_YueLieBiao.CompareContents_Weijiesuanyue" /> -->
 		</classes>
 	</test>
 </suite>

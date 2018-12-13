@@ -14,9 +14,9 @@
 			
 			<class name="FactoryAndData.ExcelTest_Jieji.CompareRecords" />
 			
-			<class name="FactoryAndData.ExcelTest_Jieji.CompareContents" />
+			 <class name="FactoryAndData.ExcelTest_Jieji.CompareContents" />
 			
-			<class name="FactoryAndData.ExcelTest_Jieji.CompareContents_Shouru" />
+			<!--<class name="FactoryAndData.ExcelTest_Jieji.CompareContents_Shouru" /> -->
 
 			
 		</classes>

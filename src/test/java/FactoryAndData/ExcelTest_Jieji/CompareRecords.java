@@ -14,27 +14,27 @@ public class CompareRecords {
 	public static Object[][] Data16389() {
 		return new Object[][] { 
 			{ 
-				"C:\\Users\\gaopan\\Desktop\\接机账单\\测试数据\\接机对账全表.xlsx",
+				"C:\\Users\\gaopan\\Desktop\\接机账单\\测试数据11.1_11.11\\接机对账全表.xlsx",
 				"C:\\Users\\gaopan\\Desktop\\接机账单\\result\\records.xls",
 				"zhengxiang----zhifu records test",
 				"pay",
-				"支付ID",
+				"业务单号",
 				"positive_account",
 				"订单号",
 				"zhengxiang----zhifu" 
 			},
 			{
-				"C:\\Users\\gaopan\\Desktop\\接机账单\\测试数据\\接机对账全表.xlsx",
+				"C:\\Users\\gaopan\\Desktop\\接机账单\\测试数据11.1_11.11\\接机对账全表.xlsx",
 				"C:\\Users\\gaopan\\Desktop\\接机账单\\result\\records.xls",
 				"nixiang-----tuikuan records test",
 				"refund",
-				"支付ID",
+				"业务单号",
 				"negative_account",
 				"订单号",
 				"nixiang-----tuikuan"
 			},
 			{ 
-				"C:\\Users\\gaopan\\Desktop\\接机账单\\测试数据\\接机对账全表.xlsx",
+				"C:\\Users\\gaopan\\Desktop\\接机账单\\测试数据11.1_11.11\\接机对账全表.xlsx",
 				"C:\\Users\\gaopan\\Desktop\\接机账单\\result\\records.xls",
 				"orders---- double records test",
 				"orders",

@@ -12,7 +12,7 @@
 		<classes>
 			<class name="FactoryAndData.ExcelTest_Jieji_Qingsuanliushui.CompareRecords" />
 			
-			<class name="FactoryAndData.ExcelTest_Jieji_Qingsuanliushui.CompareRecords_GetR" />
+			<!-- <class name="FactoryAndData.ExcelTest_Jieji_Qingsuanliushui.CompareRecords_GetR" /> -->
 			
 			<class name="FactoryAndData.ExcelTest_Jieji_Qingsuanliushui.CompareContents" />
 			

@@ -141,16 +141,29 @@ public class CompareContentsTest {
         			
         			value = WriterExcelUtil.getCellValue(xssfCell).replace("'", "");
         			
-//        			Dailylog.logInfo("pay  value >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>is :" + value);
+        			Dailylog.logInfo("pay  value >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>is :" + value);
         		}
         		
         		
         		
         		if(zhifu_id_col == y){
-        			pay_id = WriterExcelUtil.getCellValue(xssfCell).replace("'", "");
         			
-//        			Dailylog.logInfo("pay id >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> is :" + pay_id +  "y is :" +y);
+        			if(getPayColumnName.equals("业务单号")){
+        				pay_id = WriterExcelUtil.getCellValue(xssfCell).replace("'", "").trim();
+            			
+            			pay_id = pay_id.substring(0, 17);
+            			
+//            			Dailylog.logInfo("pay id >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> is :" + pay_id +  "y is :" +y);
+            			
+        			}else{
+        				pay_id = WriterExcelUtil.getCellValue(xssfCell).replace("'", "").trim();
+        				
+//        				Dailylog.logInfo("pay id >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> is :" + pay_id +  "y is :" +y);
+        			}
+        			
         		}
+        		
+        		
         		
         	}
         	
@@ -242,7 +255,7 @@ public class CompareContentsTest {
         			
         			account_id = WriterExcelUtil.getCellValue(xssfCell);
         			
-//        			Dailylog.logInfo("account_id >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> is :" + account_id +"zhifu_id_col is :" + duizhang_id_col + "y is :" + y + "     colLength_zhengxiang is ：" + colLength_zhengxiang);
+        			Dailylog.logInfo("account_id >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> is :" + account_id +"zhifu_id_col is :" + duizhang_id_col + "y is :" + y + "     colLength_zhengxiang is ：" + colLength_zhengxiang);
         		}
           		
         		map_account.put(account_id, value);

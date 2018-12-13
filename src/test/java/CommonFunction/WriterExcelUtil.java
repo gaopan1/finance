@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -28,6 +29,7 @@ import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.FillPatternType;
+import org.apache.poi.ss.usermodel.FormulaEvaluator;
 import org.apache.poi.ss.usermodel.IndexedColors;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
@@ -39,6 +41,32 @@ import jxl.write.WritableWorkbook;
 import jxl.write.WriteException;
 
 public class WriterExcelUtil {
+	
+	
+	/**
+	 * 
+	 * @param time
+	 * @param day
+	 * @return 返回固定的日期，通过给定一个时间， 具体的时间形式是： 2018-11-29，然后给定天数，假如3天，然后的话返回一个加上给定天数的日期
+	 * @throws ParseException
+	 */
+	
+	public static String getDateString(String time,long day) throws ParseException {
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+		
+		Date date = sdf.parse(time);
+	
+		
+		long timeMillis = date.getTime();
+		day = day * 24 * 60 * 60 * 1000;
+		timeMillis += day;
+		Date d = new Date(timeMillis);
+		
+		return sdf.format(d);
+
+	}
+	
 	
 	
 	
@@ -365,23 +393,47 @@ public class WriterExcelUtil {
 	
 	
 	
-	public static String getCellValue(XSSFCell xssfCell){
+	//"yyyy-MM-dd hh:mm:ss"
+	
+	public static String getCellValue1(XSSFCell xssfCell,String timeFormat){
 
 		String value = "";
 		if(xssfCell.getCellType() == 1){
 			value = xssfCell.getStringCellValue();
-			Dailylog.logInfo("value is ::::str::" + value);
+//			Dailylog.logInfo("value is ::::str::" + value);
 		}else if (xssfCell.getCellType() == 0){
 			if(HSSFDateUtil.isCellDateFormatted(xssfCell)){
 				Date date = xssfCell.getDateCellValue();
-				value = DateFormatUtils.format(date, "yyyy-MM-dd hh:mm:ss");
-				Dailylog.logInfo("value is ::::date::" + value);
+				value = DateFormatUtils.format(date, timeFormat);
+//				Dailylog.logInfo("value is ::::date::" + value);
 			}else{
 //				DecimalFormat df = new DecimalFormat("0");
 //				value = df.format(xssfCell.getNumericCellValue());
 				
 				value = xssfCell.getNumericCellValue()+"";
-				Dailylog.logInfo("value is ::::numbers::" + value);
+//				Dailylog.logInfo("value is ::::numbers::" + value);
+			}	
+		}
+		return value.replace("'", "").trim();
+	}
+	
+	public static String getCellValue(XSSFCell xssfCell){
+
+		String value = "";
+		if(xssfCell.getCellType() == 1){
+			value = xssfCell.getStringCellValue();
+//			Dailylog.logInfo("value is ::::str::" + value);
+		}else if (xssfCell.getCellType() == 0){
+			if(HSSFDateUtil.isCellDateFormatted(xssfCell)){
+				Date date = xssfCell.getDateCellValue();
+				value = DateFormatUtils.format(date, "yyyy-MM-dd hh:mm:ss");
+//				Dailylog.logInfo("value is ::::date::" + value);
+			}else{
+//				DecimalFormat df = new DecimalFormat("0");
+//				value = df.format(xssfCell.getNumericCellValue());
+				
+				value = xssfCell.getNumericCellValue()+"";
+//				Dailylog.logInfo("value is ::::numbers::" + value);
 			}	
 		}
 		return value.replace("'", "").trim();

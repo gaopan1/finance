@@ -101,8 +101,14 @@ public class CompareRecordsTest {
         	
         	xssfCell1 = xssfRow1.getCell(zhifu_id_col);
         	
-        	cellValue1 = xssfCell1.getStringCellValue().replace("'", "");
-        	Dailylog.logInfo("cell value is >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>:" + cellValue1);
+        	if(getPayColumnName.equals("业务单号")){
+        		cellValue1 = xssfCell1.getStringCellValue().replace("'", "");
+            	cellValue1 = cellValue1.substring(0, 17);
+            	Dailylog.logInfo("cell value is >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>:" + cellValue1);
+        	}else{
+        		cellValue1 = xssfCell1.getStringCellValue().replace("'", "");
+        		Dailylog.logInfo("cell value is >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>:" + cellValue1);
+        	}
         	zhifu_id_list.add(cellValue1);	
         }
 

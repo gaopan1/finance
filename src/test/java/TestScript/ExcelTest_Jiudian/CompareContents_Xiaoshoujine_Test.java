@@ -162,23 +162,23 @@ public class CompareContents_Xiaoshoujine_Test {
         	
         	// 根据不同的模式  计算收入  然后判断收入是否正确
         	
-        	Dailylog.logInfo("pay id is :::::::::::::::::::::::::::::::::" + payId_str);
+//        	Dailylog.logInfo("pay id is :::::::::::::::::::::::::::::::::" + payId_str);
         	
         	double f_zhifu_Shishou_jine = WriterExcelUtil.getFloatPrice(zhifu_Shishou_jine_str);
-        	Dailylog.logInfo("f_zhifu_Shishou_jine is :" + f_zhifu_Shishou_jine);
+//        	Dailylog.logInfo("f_zhifu_Shishou_jine is :" + f_zhifu_Shishou_jine);
         	
         	double f_butie = WriterExcelUtil.getFloatPrice(butie_str);
-        	Dailylog.logInfo("f_butie is :" + f_butie);
+//        	Dailylog.logInfo("f_butie is :" + f_butie);
         	
         	double f_xiaoshoujia = WriterExcelUtil.getFloatPrice(xiaoshoujia_str);
-        	Dailylog.logInfo("f_xiaoshoujia is :" + f_xiaoshoujia);
+//        	Dailylog.logInfo("f_xiaoshoujia is :" + f_xiaoshoujia);
         	
-        	Dailylog.logInfo("<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>");
+//        	Dailylog.logInfo("<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>");
         	
         	//计算公式
         	double calculate_Xiaoshoujine = f_zhifu_Shishou_jine + f_butie;
         	
-        	Dailylog.logInfo("销售价的计算结果是：" + calculate_Xiaoshoujine);
+//        	Dailylog.logInfo("销售价的计算结果是：" + calculate_Xiaoshoujine);
         	
         	
         	List<String> list_detail = null;
