@@ -81,12 +81,13 @@ public class CompareRecordsTest {
 		File file = new File(sourceTable);
 		
 		if(file.exists()){
-			System.out.println("exists");
+			System.out.println("exists----------------");
 		}
 		
 	
         //2.Excel工作薄对象
         XSSFWorkbook xssfWorkbook = new XSSFWorkbook(new FileInputStream(file));
+        Dailylog.logInfo("start ----------------------");
         //3.Excel工作表对象
         int index_paysheet = xssfWorkbook.getSheetIndex(pay_sheetName);
         Dailylog.logInfo("index paysheet is :" + index_paysheet);

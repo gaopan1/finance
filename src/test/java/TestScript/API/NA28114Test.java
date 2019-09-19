@@ -1,40 +1,14 @@
 package TestScript.API;
 
-import static org.testng.Assert.assertTrue;
-
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.net.URLConnection;
-
-import net.sf.json.JSONArray;
-import net.sf.json.JSONObject;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.web.client.RestTemplate;
-import org.testng.Assert;
 import org.testng.ITestContext;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
 
-import CommonFunction.B2CCommon;
-import CommonFunction.Common;
-import CommonFunction.EMailCommon;
-import CommonFunction.HMCCommon;
 import CommonFunction.HttpCommon;
 import CommonFunction.JSONCommon;
-import CommonFunction.DesignHandler.NavigationBar;
-import CommonFunction.DesignHandler.SplitterPage;
-import Logger.Dailylog;
-import Pages.B2CPage;
-import Pages.HMCPage;
-import Pages.MailPage;
 import TestScript.ServiceSuperTestClass;
-import TestScript.SuperTestClass;
+import net.sf.json.JSONArray;
 
 public class NA28114Test extends ServiceSuperTestClass {
 

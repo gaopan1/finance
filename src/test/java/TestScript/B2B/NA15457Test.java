@@ -6,6 +6,7 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.annotations.Test;
 
@@ -17,7 +18,7 @@ import Pages.B2BPage;
 import Pages.B2BPunchoutPage;
 import Pages.HMCPage;
 import TestScript.SuperTestClass;
-import jxl.common.Assert;
+
 
 
 
@@ -134,7 +135,7 @@ public class NA15457Test extends SuperTestClass {
 		if(Common.isElementExist(driver, By.id("_drgyub"),10)){
 			driver.findElement(By.id("_drgyub")).click();
 		}else{
-			Assert.verify(false, "shopBT not display");
+			
 		}
 		
 		

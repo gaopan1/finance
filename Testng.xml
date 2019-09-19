@@ -19,8 +19,20 @@
 			<!-- <class name="FactoryAndData.ABTestData.ABTestData" /> -->
 
 
-			<class name="FactoryAndData.ExcelTest_Jiudian_EcouponSplitting.useScenery.CompareRecordSData" />
-	
+			<!-- <class name="FactoryAndData.ExcelTest_Jiudian_EcouponSplitting.useScenery.CompareRecordSData" /> -->
+		
+			<class name="FactoryAndData.ExcelTest_Jiudian.CompareRecords" />
+			
+			<!-- <class name="FactoryAndData.ExcelTest_Jiudian.CompareContents_Butie" />
+			<class name="FactoryAndData.ExcelTest_Minsu.CompareContents_Feiyong" />
+			<class name="FactoryAndData.ExcelTest_Minsu.CompareContents_Gongyingshang" />
+			<class name="FactoryAndData.ExcelTest_Minsu.CompareContents_Shouru" />
+			<class name="FactoryAndData.ExcelTest_Minsu.CompareContents_Tuikuan_Zhifu_Rate" />
+			<class name="FactoryAndData.ExcelTest_Minsu.CompareContents_Xiaoshoujine" />
+			<class name="FactoryAndData.ExcelTest_Minsu.CompareContents_Zhifushishoujine" />
+			<class name="FactoryAndData.ExcelTest_Minsu.CompareContents_Zhekou" /> -->
+			
+			
 		</classes>
 	</test>
 </suite>

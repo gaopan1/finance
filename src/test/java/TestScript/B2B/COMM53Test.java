@@ -84,6 +84,7 @@ public class COMM53Test extends SuperTestClass {
 	@Test(alwaysRun = true, groups = { "commercegroup", "cartcheckout", "p2", "b2b" })
 	public void COMM52(ITestContext ctx) {
 		try {
+			
 			this.prepareTest();
 			b2bPage = new B2BPage(driver);
 			hmcPage = new HMCPage(driver);

@@ -1,4 +1,4 @@
-package FactoryAndData.ExcelTest_Jiudian;
+package FactoryAndData.ExcelTest_Minsu;
 
 
 import org.testng.annotations.DataProvider;
@@ -23,33 +23,9 @@ public class CompareRecords {
 		return new Object[][] { 
 				
 			//数据准备\七月1_3	
-			/*{ 	
-				"C:\\Users\\gaopan\\Desktop\\酒店账单\\数据准备\\"+testMonth+"_"+testDay+"\\酒店流水对账全表.xlsx",
-				"C:\\Users\\gaopan\\Desktop\\酒店账单\\result\\records"+testMonth+"_"+testDay+".xls",
-				"zhengxiang----zhifu records test",
-				"pay",
-				"支付ID",
-				"业务单号",
-				"positive_hotel",
-				"订单ID",
-				"支付订单ID",
-				"pay<>positive_hotel" 
-			},
-			{ 
-				"C:\\Users\\gaopan\\Desktop\\酒店账单\\数据准备\\"+testMonth+"_"+testDay+"\\酒店流水对账全表.xlsx",
-				"C:\\Users\\gaopan\\Desktop\\酒店账单\\result\\records"+testMonth+"_"+testDay+".xls",
-				"nixiang-----tuikuan records test",
-				"refund",
-				"支付ID",
-				"业务单号",
-				"negative_hotel",
-				"订单ID",
-				"支付订单ID",
-				"refund<>negative_hotel"
-			},*/
 			{ 	
-				"D:\\马蜂窝对账项目\\历史流水\\2018-01-01_10\\酒店流水对账全表.xlsx",
-				"D:\\马蜂窝对账项目\\历史流水\\2018-01-01_10\result\\records_2018_01_10.xls",
+				"D:\\马蜂窝对账项目\\小猪民宿\\数据准备\\支付和流水\\民宿流水对账全表.xlsx",
+				"D:\\马蜂窝对账项目\\小猪民宿\\数据准备\\支付和流水\\results\\results_Records.xls",
 				"zhengxiang----zhifu records test",
 				"pay",
 				"支付ID",
@@ -60,8 +36,8 @@ public class CompareRecords {
 				"pay<>positive_hotel" 
 			},
 			{ 
-				"D:\\马蜂窝对账项目\\历史流水\\2018-01-01_10\\酒店流水对账全表.xlsx",
-				"D:\\马蜂窝对账项目\\历史流水\\2018-01-01_10\result\\records_2018_01_10.xls",
+				"D:\\马蜂窝对账项目\\小猪民宿\\数据准备\\支付和流水\\民宿流水对账全表.xlsx",
+				"D:\\马蜂窝对账项目\\小猪民宿\\数据准备\\支付和流水\\results\\results_Records.xls",
 				"nixiang-----tuikuan records test",
 				"refund",
 				"支付ID",
@@ -71,7 +47,7 @@ public class CompareRecords {
 				"支付订单ID",
 				"refund<>negative_hotel"
 			},
-
+			
 
 		};
 	}

@@ -96,7 +96,7 @@ public class NA28065Test extends SuperTestClass {
 			List<Map<String, Object>> datatable = write2(table);
 			Common.sleep(3000);
 			//write data to excel
-			WriterExcelUtil.writeExcel(data, newFilePath,datatable);
+		
 			// upload file
 			uploadFile(newFilePath);
 			Dailylog.logInfoDB(3, "HMC -> Nemo -> Product&Outlet Upload", Store, testName);
@@ -158,7 +158,7 @@ public class NA28065Test extends SuperTestClass {
 			List<Map<String, Object>> datatable1 = write2(table);
 			Common.sleep(3000);
 			//write data to excel
-			WriterExcelUtil.writeExcel(data1, newFilePath1,datatable1);
+			
 			// upload file
 			uploadFile(newFilePath1);
 			Dailylog.logInfoDB(7, "HMC -> Nemo -> Product&Outlet Upload", Store, testName);
@@ -205,7 +205,7 @@ public class NA28065Test extends SuperTestClass {
 			List<Map<String, Object>> datatable2 = write2(table);
 			Common.sleep(3000);
 			//write data to excel
-			WriterExcelUtil.writeExcel(data2, newFilePath2,datatable2);
+			
 			// upload file
 			uploadFile(newFilePath2);
 			Dailylog.logInfoDB(11, "HMC -> Nemo -> Product&Outlet Upload", Store, testName);

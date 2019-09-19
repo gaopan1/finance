@@ -23,7 +23,9 @@ public class AutoReportImpl implements AutoReportDao {
 	private static AutoReportDao testCaseDao = null;
 	private JdbcTemplate jdbcTemplate;
 
+	private DataSource dataSource;
 	public void setDataSource(DataSource dataSource) {
+		this.dataSource = dataSource;
 		this.jdbcTemplate = new JdbcTemplate(dataSource);
 	}
 
